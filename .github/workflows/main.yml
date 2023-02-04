@@ -26,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: nallachaitanya07/contoso-website:latest
+          tags: contoso-website:latest
