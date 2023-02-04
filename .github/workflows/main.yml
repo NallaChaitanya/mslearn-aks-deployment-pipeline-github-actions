@@ -25,5 +25,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          push: true
-          tags: contoso-website:latest
+          load: true
+          tags: nallachaitanya07/contoso-website:latest
