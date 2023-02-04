@@ -17,7 +17,7 @@ jobs:
       - name: Docker Login
         uses: docker/login-action@v1
         with:
-          registry: nallachaitanya07
+          registry: docker.io/nallachaitanya07
           username: nallachaitanya07
           password: Chaitanya@2022
 
