@@ -1,0 +1,7 @@
+image:
+  registry: docker.io
+  name: contoso-website
+  tag: latest
+
+  dns:
+  name: 6dc628a4639b48b9a14d.eastus.aksapp.io
