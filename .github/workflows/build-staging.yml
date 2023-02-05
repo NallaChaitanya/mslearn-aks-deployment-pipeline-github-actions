@@ -14,9 +14,9 @@ jobs:
       - name: Build and push staging image
         uses: docker/build-push-action@v1.1.1
         with:
-          username: ${{ secrets.ACR_LOGIN }}
-          password: ${{ secrets.ACR_PASSWORD }}
-          registry: ${{ secrets.ACR_NAME }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          #registry: ${{ secrets.ACR_NAME }}
           repository: contoso-website
           tags: latest
 
@@ -51,5 +51,5 @@ jobs:
             --namespace staging \
             contoso-website \
             ./kubernetes/contoso-website \
-            --set image.repository=${{ secrets.ACR_NAME }} \
+            --set image.repository=${{ secrets.ACR }} \
             --set dns.name=${{ secrets.DNS_NAME }}
